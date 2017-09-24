@@ -1,0 +1,5 @@
+package: github.com/roscopecoltran/pretty
+import:
+- package: github.com/kr/text
+testImport:
+- package: github.com/kr/pretty

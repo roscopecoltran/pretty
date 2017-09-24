@@ -83,8 +83,8 @@ func Println(a ...interface{}) (n int, errno error) {
 
 // Sprintf is a convenience wrapper for fmt.Sprintf.
 //
-// Calling Sprintf(f, x, y) is equivalent to
-// fmt.Sprint(f, Formatter(x), Formatter(y)).
+// Calling Sprint(x, y) is equivalent to
+// fmt.Sprint(Formatter(x), Formatter(y)).
 func Sprint(a ...interface{}) string {
 	return fmt.Sprint(wrap(a, false)...)
 }
